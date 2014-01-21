@@ -1,0 +1,290 @@
+\documentclass[12pt,a4paper,final]{moderncv}
+% \moderncvtheme[green]{casual}
+% \pdfminorversion=7
+
+% \usepackage[firstyear=2005,lastyear=2014]{moderntimeline}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+% \usepackage{ucs}
+% \usepackage{amssymb,amsmath,amsfonts,latexsym,mathtext}
+\usepackage{makeidx}
+\usepackage{calc}
+\usepackage[russian,english]{babel}
+\usepackage[scale=0.90]{geometry}
+\usepackage{changepage}
+% \usepackage{parskip}
+% \usepackage{lmodern}
+\usepackage{tikz}
+
+%\nopagenumbers{}
+
+\setlength{\hintscolumnwidth}{3cm}
+
+\AtBeginDocument{\setlength{\maketitlenamewidth}{7cm}}
+\AtBeginDocument{\recomputelengths}
+
+\firstname{Max}
+\familyname{Riveiro}
+\title{\mbox{Software Developer}}
+\mobile{MY_PHONE}
+\email{kavu13@gmail.com}
+\github{github.com/kavu}
+\photo[64pt]{photo}
+
+% \renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmr}
+% \renewcommand{\ttdefault}{cmtt}
+
+\begin{document}
+\maketitle
+%
+\section{Personal information}
+\cvline{Birth date}{October 13, 1987}%
+\cvline{Current location}{Russian Federation, Moscow}%
+\cvline{Marital status}{Single}%
+
+\section{Personal statement}
+{\parindent=1cm
+  \begin{adjustwidth}{\hintscolumnwidth+\separatorcolumnwidth}{}
+    \noindent I am person passionate about something new. I love to learn. As a programmer I am passionate about bleeding-edge technologies.
+
+    Several years ago, while all my colleagues were programming in PHP, I started to learn and develop in Ruby. Later Ruby became my main programming language. Doing my Ruby projects every work day I began to learn something new besides Ruby. That's how I found Functional Programming~---~Erlang, Haskell and Common Lisp. Than was Scala and Clojure. Full list could be long enough.
+
+    I am trying to experiment with every single technology I have a chance to work. Coding in Scala for Android with working ProGuard obfuscation? Sure! Compiling a working OS X Application with a Go binary with Cocoa bindings? Let's make it possible. Exciting research tasks are the best tasks for me. But I am trying to stay reasonable, to have an open mind~---~there is no ``silver'' bullet, every tool has its task and vice versa.
+
+    Currently I am really excited Google's Go programming language. It got me with its simplicity and speed. I have an awesome experience building a RESTful API with it. But, to be honest, I don't think it's a good language for building a complex web-site. I've coded some minor libraries in Go for my own use and for learning purposes, also there is one tiny very specific web-service~---~\underline{\href{http://xamleeg.kavu.ru/}{\itshape Xamleeg}}. I am trying to actively participate in our local Go community.
+
+    Apart from my desire to learn I eager to help people, to teach them, share my experience, provide my opinion, if needed. During my university years I assisted my professor to conduct practical seminars. I was willing to stay as a teacher after graduating from the university, but due to budget cuts our department couldn't offer me any position at that moment.
+
+    So, now I am looking for job where I can learn from people smarter than me, try new technologies and languages with them, build new great things together and share my experience with people afterwards.
+  \end{adjustwidth}
+}
+
+\section{Education}
+\cventry{2005--2011}{Computer Scientist and Economist}{Moscow~Aviation~Institute (National~Research~University) (MAI~(NRU)), \underline{\href{http://mai.ru}{\itshape mai.ru}}}{Russian Federation, Moscow}{}{
+\cvline{School}{The Institute of Business Engineering MAI}
+\cvline{Department}{Applied Informatics in Economics}
+\cvline{Speciality}{Applied Informatics in Economics\newline(Computer Scientist and Economist)}
+\cvline{Average grade}{4.34~out~of~5.0}
+\cvline{}{\em{Copy of the official translated to English diploma supplement can\newline{}be provided by request.}}}
+
+\subsection{Specialist thesis}
+\cvline{Title}{\emph{Automation of trade and procurement operations for realization of pet good using the Internet.}}
+\cvline{}{\textbf{Ruby, Ruby on Rails, E-commerce}}
+\cvline{Summary}{\small The objective of diploma thesis was to develop the online shop \underline{\href{http://barboske.ru}{www.barboske.ru}}, which was created for purpose of profit earning by processing B2B and B2C deals with pet goods. The online shop was programmed using Ruby and Ruby~on~Rails framework. Resulting software system had successfully passed all integration tests and is now used in production. It had proven it's ability to satisfy needs of growing and demanding pet goods market and continues to make a stable profit.}
+
+\section{Experience}
+% \tllabelcventry[black]{2011}{2013}
+\cventry
+{11.2011--12.2013}
+{Lead Developer / CTO}
+{CookWizMe~(startup company, culinary social mobile application for Apple~iOS~and Google~Android~platforms)}
+{Russian~Federation, Moscow}
+{}
+{
+  Development of backend API server for mobile application and full featured website, developers team management.
+  \\\\
+  \textbf{URLs:}
+  \begin{itemize}
+    \item \underline{\href{https://cookwiz.me/}{\itshape CookWiz.Me}}
+    \item \underline{\href{https://play.google.com/store/apps/details?id=com.cookwizme}{\itshape CookWizMe for Android}}
+    \item \underline{\href{https://itunes.apple.com/app/id605764643}{\itshape CookWizMe for iOS}}
+  \end{itemize}
+  \bigskip
+  \textbf{Technologies:}~Ruby~1.9.3, Ruby~on~Rails~3.2.15, Unicorn, Sidekiq, PostgreSQL 9.2, Redis, Solr, NginX, CoffeeScript, jQuery, Pivotal Tracker, Trello, HockeyApp, NewRelic RPM.
+  \\\\
+  \textbf{Responsibilities:}~development of backend Ruby server with REST API, frontend website development, REST API documentation, servers and deployments management, developers' (mobile and frontend) team management, developers' tasks organizing, regular beta builds of mobile app and users bug reports processing, backend and website application architecture, performance tuning, job interviews with candidates for developers positions, proactive tech support for team members.
+  \\\\
+  \textbf{Achievements:}~developed a solid API for a successful mobile application. Began a transition of mobile clients' API to Go.
+}
+%
+% \tllabelcventry[black]{2011}{2011}
+\cventry
+{02.2011--11.2011}
+{Lead Developer}
+{
+  Production company of Andrei Konchalovsky, project <<Edim~Doma!>>, \underline{\href{http://pc.konchalovsky.ru}{pc.konchalovsky.ru}}
+}
+{Russian~Federation, Moscow}
+{}
+{
+  Development and support of the themed social cooking portal \underline{\href{http://www.edimdoma.ru}{\itshape EdimDoma.Ru}}.
+  \\\\
+  \textbf{Technologies:}~Ruby~1.8.7~(REE), Ruby~on~Rails~2.3.11, PostgreSQL 9, Redis, memcached, jQuery, Backbone.js, NginX, Unicorn, Sphinx, Monit, Munin, Redmine, NewRelic RPM.
+  \\\\
+  \textbf{Responsibilities:}~refactoring of~the~old legacy~code,~developers' team management, formalization of project manager's ideas into the programmers' tasks, application architecture optimization and performance tuning, application deployments, job interviews with candidates for developers positions, servers management;
+  \\\\
+  \textbf{Achievements:}~developed an API for external iOS app consumer, doubling the unique visitors bandwidth (from 30\,000 up to 55\,000--60\,000), created rSpec testing suite on the critical business logic parts of the application from the ground up.
+}
+%
+% \tllabelcventry[black]{2010}{2011}
+\cventry
+{09.2010--02.2011}
+{Assistant}
+{Moscow~Aviation~Institute (National~Research~University) (MAI~(NRU)) \underline{\href{http://mai.ru}{\itshape mai.ru}}}
+{Russian~Federation, Moscow}
+{}
+{
+  Conduction of practical seminars: ``Oracle PL/SQL'', ``Expert Systems'', ``Object-oriented programming''.
+}
+%
+% \tllabelcventry[black]{2009}{2010}
+\cventry
+{11.2009--09.2010}
+{Lead Developer}
+{Online shop \underline{\href{http://barboske.ru}{\itshape Barboske.ru}}~(pet~goods)}
+{Russian~Federation, Moscow}
+{}
+{
+  Full cycle online shop development.
+  \\\\
+  \textbf{Technologies:}~Ruby~1.8.7~(REE), Ruby~on~Rails~2.3.10, rSpec, MySQL, HAML, SASS, jQuery, nginx, Passenger;
+  \\\\
+  \textbf{Responsibilities:}~design template slicing, HTML~/~CSS templating, app architecture and development, production server setup and management, support.
+}
+%
+% \tllabelcventry[black]{2008}{2009}
+\cventry
+{04.2008--08.2009}
+{Web Developer, Lead Supporting Developer}
+{
+  AIST~LLC. \underline{\href{http://aist.ru}{\itshape aist.ru}} (web~integration, web~development, developer of popular CMS~NetCat)
+}
+{Russian~Federation, Moscow}
+{}
+{
+Websites development using CMS~NetCat.\\\\\
+\textbf{Technologies:}~xHTML~4~Strict, CSS~2.1, PHP~5.2, CMS~NetCat~3.2, Apache, MySQL;\\\\\
+\textbf{Responsibilities:}~CMS~NetCat-based websites development and modernization, small participation in CMS~NetCat developing, client support and assistance.
+}
+%
+% \tllabelcventry[black]{2008}{2008}
+\cventry
+{01.2008--04.2008}
+{Web Developer}
+{
+  SEG MADI (student engineering group of Moscow Automobile and Road Construction State Technical University (MADI)), \underline{\href{http://madi.ru}{\itshape madi.ru}}
+}
+{Russian~Federation, Moscow}
+{}
+{
+  Web-site development.\\\\
+  \textbf{Technologies:}~HTML, CSS, PHP 4, Apache, MySQL;\\\\
+  \textbf{Responsibilities:}~HTML~/~CSS templating, PHP programming, simple SEO optimization, support.
+}
+%
+% \tllabelcventry[black]{2007}{2011}
+\cventry
+{10.2007--11.2011}
+{Freelance developer}{}{}{}{
+\begin{itemize}
+  \item \textbf{ITC Trade}, project \underline{\href{http://itc-trade.ru}{\itshape ITC-trade.ru}} (B2B servers' parts sales)~---~HTML~/~CSS templating (Twitter Bootstrap), Ruby programming (Sinatra framework), deployment, support;
+  %
+  \item \textbf{Moscow International Translation Center}, project \underline{\href{http://specperevody.ru}{\itshape SpecPerevody.ru}} (translation~services)~---~web-design, design template slicing, HTML~/~CSS templating (960gs~Framwork), PHP~5.3~programming;
+  %
+  \item \textbf{Moscow International Translation Center} \underline{\href{http://mmcp.ru}{\itshape mmcp.ru}} (translation~services)~---~consulting, PHP~5.3 programming, web-design;
+  %
+  \item \textbf{Irbis Trading Firm LLC.} (B2B door accessories sales) \underline{\href{http://irbis-td.ru}{\itshape irbis-td.ru}}~---~HTML~/~CSS templating, SEO optimization, Perl programming, consulting;
+  %
+  \item \textbf{PK Atlant LLC.} \underline{\href{http://pkatlant.ru}{\itshape pkatlant.ru}} (stationery manufacturing)~---~website development using CMS NetCat, support;
+  %
+  \item \textbf{Master Cart LLC.} \underline{\href{http://www.cardplace.ru}{\itshape www.cardplace.ru}} (hobby games online shop)~---~developing database management and synchronization Ruby script, PHP programming;
+  %
+  \item \textbf{Mercedes-Zelenograd} \underline{\href{http://mercedes-zelenograd.ru}{\itshape Mercedes-Zelenograd.ru}} (Automobile repair shop)~---~web-design, HTML~/~CSS templating;
+  %
+  \item \textbf{Fluete Academy} \underline{\href{http://www.fluteacademy.ru}{\itshape www.fluteacademy.ru}} (classical music ensemble)~---~design conception, consulting;
+  %
+  \item \textbf{Zland} (residential real estate) --- PHP programming, CMS Wordpress module development.
+\end{itemize}}
+%
+% \tllabelcventry[black]{2006}{2009}
+\cventry
+{07.2006--01.2009}
+{Web Developer, Content Manager}
+{
+  Formula Hybrid (student engineering group of Moscow Automobile and Road Construction State Technical University (MADI)), \underline{\href{http://madi.ru}{\itshape madi.ru}}
+}
+{Russian~Federation, Moscow}
+{}
+{
+  Web-site development.
+  \\\\
+  \textbf{Technologies:}~HTML, CSS, PHP 4, CMS DataLife Engine, Invision Power Board, Apache, MySQL;
+  \\\\
+  \textbf{Responsibilities:}~HTML~/~CSS templating, CMS DataLife Engine modernization, PHP programming, SEO optimization, content management, support.
+}
+%
+% \tllabelcventry[black]{2006}{2006}
+\cventry
+{05.2006--09.2006}
+{Specialist,~Department~of~Earth remote sensing}
+{Geo-Alliance~\underline{\href{http://geo-alliance.ru}{\itshape geo-alliance.ru}}~(Earth remote sensing, GIS, cartography)}
+{Russian~Federation,~Moscow}
+{}
+{
+\textbf{Technologies:}~ArcGIS, PCI Geomatica, Adobe Photoshop;
+\\\\
+\textbf{Responsibilities:} Satellite Earth images processing and color correction, geo-data database management, costs estimations, consulting.
+}
+%
+% \tllabelcventry[black]{2005}{2005}
+\cventry
+{05.2005--07.2005}
+{Content Manager, Community Manager}
+{Fantasy~World~LLC. \underline{\href{http://fantasy-world.ru}{\itshape fantasy-world.ru}} (collectable~card~games~production)}
+{Russian~Federation,~Moscow}
+{}
+{
+  \textbf{Responsibilities:} Themed website \underline{\href{http://mymagic.ru}{\itshape MyMagic.ru}} content management, HTML~/~CSS templating, PHP programming.
+}
+
+\section{Languages}
+\cvlanguage{Russian}{Fluent}{Native}
+\cvlanguage{English}{Advanced}{Proficient in written and spoken, can be interviewed}
+\cvlanguage{Spanish}{Very basic}{Self learning from time to time}
+
+\section{Skills}
+\cvcomputer
+{\textbf{Operating systems}}{OS~X,~Linux~(Arch,~Ubuntu, Debian), Windows}
+{\textbf{Markup languages}}{HTML~/~HAML~/~Slim, CSS~/~SCSS~/~SASS, 960gs Framework, Twitter Bootstrap, Gumby Framework, XML, Markdown, Textile, \LaTeX2e}
+%
+\cvcomputer
+{\textbf{Programming languages}}{Ruby, Go, JavaScript~/~CoffeeScript~/~node.js, C, Clojure, Scala, Python, Objective-C, Erlang, PHP, shell-scripting, Perl, Haskell, eLisp, PL/SQL, Lua}
+{\textbf{Version Control Systems}}{git, SVN, Mercurial}
+%
+\cvcomputer
+{\textbf{SQL and NoSQL}}{PostgreSQL, MySQL, Redis, SQLite, Neo4j}
+{\textbf{HTTP servers}}{NginX, Apache, Passenger, Unicorn, lighttpd}
+%
+\cvcomputer
+{\textbf{Web Frameworks and Libraries}}{Ruby~on~Rails, Sinatra, Go~net/http, Gorilla Toolkit, Express.js}
+{\textbf{Editors and IDE}}{Sublime Text~2, Vim, Emacs, IntelliJ IDEA, RubyMine, XCode}
+%
+\cvcomputer
+{\textbf{Programming methodologies}}{TDD~/~BDD, pair programming, Agile methodologies}
+{\textbf{Project management systems}}{Pivotal Tracker, Trello, Redmine, Trac}
+%
+\cvcomputer
+{\textbf{Server orchestration}}{Puppetlabs~Puppet, Docker, Ansible}
+{\textbf{Office and graphical software}}{iWork, Microsoft~Office, Open~Office, Adobe~Photoshop, Adobe~InDesign}
+%
+\cvcomputer
+{\textbf{Other software}}{Google~Perftools, Maven, Leiningen, Wolfram~Mathematica, AllFusion Process~Modeler}{}{}
+
+\section{Additional information}
+\cvline{}{
+  \textbf{Interests and hobbies:}~I like sci-fi and fantasy genres. Favorite books author~---~Sir~Terry Pratchett. My gaming hobbies are collectable card game Magic:~the~Gathering and Dungeons~\&~Dragons roleplaying games series, new CRPG titles are also must-see for me. Music taste is very wide~---~from 60th psychedelic rock, to 8bit and chiptune electronic music. Playing guitar a little bit. Practicing crossbow archery in a summer season. I like fitness, I have a powerlifting workout three times a week.
+}%
+\cvline{}{
+  \textbf{Personal characteristics:}~considerate, responsible, able to quickly navigate to new areas of knowledge, calm, reasonable, capable to build and maintain a conflict-free relationship, a good sense of humor, possess an analytical mindset.
+}%
+\cvline{}{I have driving license of ``B'' category.}
+
+\section{Courses and certifications}
+\cvline
+{2012}
+{Coursera~---~\underline{\href{https://www.coursera.org/course/hetero}{\itshape Heterogeneous Parallel Programming}}~---~Statement of Accomplishment with Distinction.}%
+
+\section{Publications}
+\cvline{}{\mbox{M. Riveiro, Algorithms  of document classification, 2009.}}%
+\end{document}
