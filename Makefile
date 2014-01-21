@@ -27,7 +27,7 @@ clean:
 *.tex: $(CLASSES) $(STYLES) $(BIBS) $(PHOTO)
 
 %.pdf: %.tex
-	sed -e "s/MY_PHONE/$$PHONE/" $< > $(NAME)-processed.tex
-	TEXINPUTS=$(TEXINPUTS) latexmk $(LATEXMK) -pdflatex='pdflatex $(PDFLATEX) %S %O' $(NAME)-processed.tex
-	-rm $(NAME)-processed.tex
-	-mv $(NAME){-processed,}.pdf
+	# sed -e "s/MY_PHONE/$$PHONE/" $< > $(NAME)-processed.tex
+	TEXINPUTS=$(TEXINPUTS) latexmk $(LATEXMK) -pdflatex='pdflatex $(PDFLATEX) %S %O' $<
+	# -rm $(NAME)-processed.tex
+	# -mv $(NAME){-processed,}.pdf
